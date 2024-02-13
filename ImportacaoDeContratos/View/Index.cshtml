@@ -1,0 +1,7 @@
+﻿@using (Html.BeginForm("Import", "Contratos", FormMethod.Post, new { enctype = "multipart/form-data" }))
+{
+    <input type="file" name="file" />
+    <input type="submit" value="Importar" />
+}
+<div>@ViewBag.Message</div>
+
